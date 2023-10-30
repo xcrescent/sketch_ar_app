@@ -38,6 +38,7 @@ dependencies:
   get: ^4.6.6
   arcore_flutter_plugin: ^0.1.0
   image_picker: ^1.0.4
+  vector_math: ^2.1.4
 
 dev_dependencies:
   flutter_test:

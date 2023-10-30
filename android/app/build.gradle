@@ -23,7 +23,6 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.sketch_ar_overlay_app"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -50,6 +49,10 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
 
     buildTypes {
         release {
@@ -64,4 +67,8 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.8.0'
+    implementation 'com.google.ar.sceneform:core:1.8.0'
+    implementation 'com.google.ar:core:1.8.0'
+}
